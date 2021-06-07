@@ -1,23 +1,28 @@
+html { box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
 :root {
     --primery-text-color: #212121;
     --title-text-color: #212121;
     --accent-color: #2196F3;
     }
+
 body {
+    width: 1600px;
     background-color: #FFFFFF;
     font-family: Roboto, sans-serif;
 }
 a {
     text-decoration: none;
 }
-.list {
-    list-style: none;
-}
-.menu {
-    list-style: none;
-}
-.contacts {
-    list-style: none;
+.container {
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 .logo-web {
@@ -32,14 +37,76 @@ a {
     font-weight: 700;
     color: black;
 }
+.main-menu {
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-left: 215px;
+    align-items: center;
+}
+.menu {
+    display: flex;
+    list-style: none;  
+}
+.menu-list  {
+    display: flex;
+    list-style: none;
+}
+.menu-list li {
+    margin-right: 50px;
+}
+.menu-list.menu-list-item:last-child {
+    margin-right: 0px;
+}
+.nav-contacts {
+    display: flex;
+    margin-left: auto; 
+    list-style: none;
+}
+.nav-contacts-list {
+    display: flex;
+    list-style: none;
+}
+.nav-contacts-list .nav-contacts-item:not(:last-child) {
+    margin-right: 50px;
+}
+.title-nav {
+    font-size: 14px;
+    font-weight: 500;
+    color: #212121;
+}
+.title-nav:hover {color: #2196F3;
+}
 
+.menu-button {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #F5F4FA;
+}
+.menu-button:hover {
+    color: #FFFFFF;
+    background-color: #2196F3;
+}
+.menu-button:focus {
+    color: #FFFFFF;
+    background-color: #2196F3;
+}
+.main-container {
+    display: block;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+    background-color: black;
+}
 .main-title {
     font-size: 44px;
     font-weight: 900;
     font-style: normal;
     line-height: 1.4;
     color: white;
-
 }
 .main-button {
     font-family: Roboto;
@@ -49,6 +116,13 @@ a {
     color: white;
     letter-spacing: 0.06em;
     line-height: 30px;
+    border-radius: 4px;
+}
+.advantage-container {
+    margin-left: 215px;
+    margin-right: auto;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .advantage {
     font-size: 14px;
@@ -57,12 +131,32 @@ a {
     line-height: 1.14;
     letter-spacing: 0.03em;
 }
+.advantage-list {
+    display: flex;
+    list-style: none;
+}
+.advantage-list .advantage-list-item:not(:last-child) {
+    margin-right: 30px;
+}
+
 .advantage-fill {
     font-size: 14px; ;
     font-weight: 400 ;
     color: #757575;
 }
+.works-section {
+    margin-left: 215px;
+}
+.works-list {
+    display: flex;
+    list-style: none;
+    padding-bottom: 94px;
+}
+.works-list-item:not(:last-child){
+    margin-right: 30px;
+}
 .title-two {
+    padding-bottom: 50px;
     font-size: 36px;
     font-weight: 700;
     color: black;
@@ -71,15 +165,35 @@ a {
     text-align: center;
     letter-spacing: 0.03em;
 }
+.team {
+    background-color:#F5F4FA;
+}
+.team-list {
+    display: flex;
+    list-style: none;
+}
 .team-member {
+    text-align: center;
     font-size: 16px;
     font-weight: 500;
     color: #212121 ;
 }
+.team-container {
+    margin-left: 215px;
+}
 .team-role {
+    text-align: center;
     font-size: 16px;
     font-weight: 400;
     color: #757575;
+}
+.team-person:not(:last-child) {
+    margin-right: 30px;
+}
+
+.contacts {
+    list-style: none;
+    padding: 0px;
 }
 .contacts-header {   
     font-weight: 500;
@@ -89,8 +203,14 @@ a {
     letter-spacing: 0.02em;
     color: #757575;
 }
-.contacts-header:hover, .contacts-header:focus {
+.contacts-header:hover contacts-header:focus {
     color: #2196F3;
+}
+.footer-container {
+    padding-left: 215px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2f303a;
 }
 .contacts-footer {   
     font-weight: 500;
@@ -100,7 +220,7 @@ a {
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
-.contacts-footer:hover, .contacts-header:focus {
+.contacts-footer:hover.contacts-footer:focus {
     color: #2196F3;
     } 
 
@@ -119,12 +239,6 @@ a {
     letter-spacing: 0.03em;
     color: #FFFFFF;
 }
-.title-nav {
-    font-size: 14px;
-    font-weight: 500;
-    color: #212121;
-}
-.title-nav:hover {color: #2196F3;}
 
 .project-title {
     font-size: 18px;
@@ -140,17 +254,45 @@ a {
     font-weight: 400;
     color: #757575;
 }
+.portfolio-menu {
+    display: flex;
+    margin-left: 495px;
+    margin-top: 94px;
+    margin-bottom: 50px;
+    list-style: none;
+}
+.portfolio-menu li:not(:last-child) {
+    margin-right: 8px;
+}
 .menu-button {
-    font-family: Roboto;
-    font-weight: 500;
-    font-size: 16px;
-    background-color: #F5F4FA;
+    padding-left: 22px;
+    padding-top: 6px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    line-height: 26px;
+    border: transparent;
+    border-radius: 4px;
+    text-align: center;
 }
-.menu-button:hover {
-    color: #FFFFFF;
-    background-color: #2196F3;
+.portfolio-container {
+    display: flex; 
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1200px;
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
 }
-.menu-button:focus {
-    color: #FFFFFF;
-    background-color: #2196F3;
+.portfolio-list {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+    padding: 0px;
+}
+.portfolio-list > .portfolio-item {
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc(100%/3 - 30px);
 }
