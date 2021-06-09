@@ -12,7 +12,6 @@ html { box-sizing: border-box;
     }
 
 body {
-    width: 1600px;
     background-color: #FFFFFF;
     font-family: Roboto, sans-serif;
 }
@@ -23,6 +22,12 @@ a {
     width: 1200px;
     padding-right: 15px;
     padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.logotype {
+    display: block;
+    margin-left: 93px;
 }
 
 .logo-web {
@@ -39,35 +44,27 @@ a {
 }
 .main-menu {
     display: flex;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-right: 0px;
-    padding-left: 0px;
-    margin-left: 215px;
+    padding-top: 24px;
+    padding-bottom: 24px;
     align-items: center;
-}
-.menu {
-    display: flex;
-    list-style: none;  
 }
 .menu-list  {
     display: flex;
+    margin: 0px;
+    margin-left: 93px;
+    padding: 0px;
     list-style: none;
 }
-.menu-list li {
+.menu-list li:not(:last-child) {
     margin-right: 50px;
 }
 .menu-list.menu-list-item:last-child {
     margin-right: 0px;
 }
-.nav-contacts {
-    display: flex;
-    margin-left: auto; 
-    list-style: none;
-}
 .nav-contacts-list {
     display: flex;
     list-style: none;
+    margin-left: auto;
 }
 .nav-contacts-list .nav-contacts-item:not(:last-child) {
     margin-right: 50px;
@@ -75,7 +72,7 @@ a {
 .title-nav {
     font-size: 14px;
     font-weight: 500;
-    color: #212121;
+    color: #2F303A;
 }
 .title-nav:hover {color: #2196F3;
 }
@@ -96,12 +93,15 @@ a {
 }
 .main-container {
     display: block;
-    padding-top: 200px;
+    margin: 0px;
     padding-bottom: 200px;
     text-align: center;
-    background-color: black;
+    background-color: #2F303A;
 }
 .main-title {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    padding-top: 200px;
     font-size: 44px;
     font-weight: 900;
     font-style: normal;
@@ -109,6 +109,7 @@ a {
     color: white;
 }
 .main-button {
+    padding: 8px 30px 8px 30px;
     font-family: Roboto;
     background-color: #2196F3;
     font-size: 16px;
@@ -119,7 +120,7 @@ a {
     border-radius: 4px;
 }
 .advantage-container {
-    margin-left: 215px;
+    margin-left: auto;
     margin-right: auto;
     padding-top: 94px;
     padding-bottom: 94px;
@@ -132,6 +133,8 @@ a {
     letter-spacing: 0.03em;
 }
 .advantage-list {
+    margin: 0px;
+    padding: 0px;
     display: flex;
     list-style: none;
 }
@@ -144,19 +147,9 @@ a {
     font-weight: 400 ;
     color: #757575;
 }
-.works-section {
-    margin-left: 215px;
-}
-.works-list {
-    display: flex;
-    list-style: none;
-    padding-bottom: 94px;
-}
-.works-list-item:not(:last-child){
-    margin-right: 30px;
-}
 .title-two {
-    padding-bottom: 50px;
+    margin: 0px;
+    margin-bottom: 50px;
     font-size: 36px;
     font-weight: 700;
     color: black;
@@ -165,23 +158,56 @@ a {
     text-align: center;
     letter-spacing: 0.03em;
 }
+
+.works-list {
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 94px;
+}
+.works-list-item:not(:last-child){
+    margin-right: 30px;
+}
+
 .team {
     background-color:#F5F4FA;
 }
+.title-team {
+    margin: 0px;
+    margin-bottom: 50px;
+    padding-top: 94px;
+    font-size: 36px;
+    font-weight: 700;
+    color: black;
+    font-family: Roboto;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
 .team-list {
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px;
+    padding-bottom: 94px;
     display: flex;
     list-style: none;
 }
+.team-person-card {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 .team-member {
+    margin: 0px;
+    margin-bottom: 10px;
     text-align: center;
     font-size: 16px;
     font-weight: 500;
     color: #212121 ;
 }
-.team-container {
-    margin-left: 215px;
-}
 .team-role {
+    margin: 0px;
     text-align: center;
     font-size: 16px;
     font-weight: 400;
@@ -192,6 +218,7 @@ a {
 }
 
 .contacts {
+    margin: 0px;
     list-style: none;
     padding: 0px;
 }
@@ -212,6 +239,9 @@ a {
     padding-bottom: 60px;
     background-color: #2f303a;
 }
+.logotype-footer {
+    margin-bottom: 20px;
+}
 .contacts-footer {   
     font-weight: 500;
     font-size: 14px;
@@ -219,6 +249,9 @@ a {
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+}
+.contacts li:not(:last-child) {
+    margin-bottom: 9px;
 }
 .contacts-footer:hover.contacts-footer:focus {
     color: #2196F3;
@@ -232,6 +265,7 @@ a {
 }
 
 .address {
+    padding-bottom: 9px;
     font-style: normal;
     font-size: 14px;
     font-weight: 400;
@@ -256,9 +290,12 @@ a {
 }
 .portfolio-menu {
     display: flex;
-    margin-left: 495px;
-    margin-top: 94px;
-    margin-bottom: 50px;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 94px;
+    padding-bottom: 50px ;
+    justify-content: center;
+ 
     list-style: none;
 }
 .portfolio-menu li:not(:last-child) {
