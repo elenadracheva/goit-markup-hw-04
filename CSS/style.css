@@ -332,11 +332,11 @@ img {
     margin: 0px;
     margin-left:-30px;
     margin-top:-30px;
-    padding: 0px;
+    padding: 0px;   
 }
-
 .portfolio-item {
     margin-left: 30px;
     margin-top: 30px;
     flex-basis: calc(100%/3 - 30px);
+    border: 1px solid #EEEEEE;
 }
