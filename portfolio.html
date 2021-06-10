@@ -9,26 +9,26 @@
     <link rel="stylesheet" href="CSS/style.css">
  </head>
  <body>
-  <div class="container"> 
-    <header class="main-menu">
-          <a href="index.html" class="logotype"> 
-            <span class="logo-web"> Web</span>
-            <span class="logo-studio">Studio</span> </a> 
+  <header>
+    <div class="main-menu container"> 
+        <a href="index.html" class="logotype"> 
+          <span class="logo-web"> Web</span>
+          <span class="logo-studio">Studio</span> </a> 
       <nav> 
-          <ul class="menu-list">                                                               
-            <li class="menu-list-item"> <a href="" class="title-nav" style="color: #2196F3 ;">Студия</a></li>
-            <li class="menu-list-item"> <a href="./portfolio.html" target="blank" class="title-nav">Портфолио</a></li>
-            <li class="menu-list-item"> <a href="" class="title-nav" >Контакты</a></li>
+        <ul class="menu-list">                                                               
+          <li class="menu-list-item"> <a href="" class="title-nav" style="color: #2196F3 ;">Студия</a></li>
+          <li class="menu-list-item"> <a href="./portfolio.html" target="blank" class="title-nav">Портфолио</a></li>
+          <li class="menu-list-item"> <a href="" class="title-nav" >Контакты</a></li>
           </ul>  
       </nav>
-          <ul class="nav-contacts-list">
-              <li class="nav-contacts-item"> <a href="mailto:info@devstudio.com:" class="contacts-header">info@devstudio.com</a> </li>
-              <li class="nav-contacts-item"> <a href="tel:+380961111111" class="contacts-header">+38 096 111 11 11</a> </li>
-        </ul>     
+        <ul class="nav-contacts-list">
+          <li class="nav-contacts-item"> <a href="mailto:info@devstudio.com:" class="contacts-header">info@devstudio.com</a> </li>
+          <li class="nav-contacts-item"> <a href="tel:+380961111111" class="contacts-header">+38 096 111 11 11</a> </li>
+        </ul>  
+    </div>   
     </header>
-  </div>
    <main>
-     <section>
+     <section class="portfolio">
        <div class="container">
          <ul class="portfolio-menu">
             <li> <button type="button" class="menu-button"> Все </button> </li>
@@ -39,8 +39,8 @@
         </ul>
       </div>
     </section>
-       <section>
-        <div class="portfolio-container">
+      <section class="portfolio-section">
+        <div class="container">
           <ul class="portfolio-list">
              <li class="portfolio-item"> <a href=""><img src="portfolio-images/project-technokryak.jpg" 
                 alt="Технокряк" width="370"> 
@@ -98,15 +98,14 @@
               </li>           
             </ul> 
           </div> 
-          </section>
+        </section>
    </main>
    <footer class="footer-container">
-     <div  class="logotype-footer">
-      <a href="/index.html"> 
+    <div class="container">
+      <a href="/index.html" class="logotype-footer"> 
         <span class="logo-web"> Web</span>
-        <span class="logo-studio">Studio</span> 
+        <span class="logo-studio-footer">Studio</span> 
       </a>
-    </div>
     <address>
         <span class="address"> г. Киев, пр-т Леси Украинки, 26 </span>
         <ul class="contacts">
@@ -114,6 +113,7 @@
           <li><a class="contacts-footer" href="mailto:info@example.com">info@example.com </a> </li> 
         </ul>
     </address>
+  </div>
   </footer>
  </body>
 </html>
