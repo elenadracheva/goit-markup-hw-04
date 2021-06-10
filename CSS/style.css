@@ -18,16 +18,21 @@ body {
 a {
     text-decoration: none;
 }
+li {
+    list-style: none;
+}
+img {
+    display: block;
+}
+.logotype {
+    margin-right: 93px;
+}
 .container {
     width: 1200px;
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-}
-.logotype {
-    display: block;
-    margin-left: 93px;
 }
 
 .logo-web {
@@ -51,9 +56,7 @@ a {
 .menu-list  {
     display: flex;
     margin: 0px;
-    margin-left: 93px;
     padding: 0px;
-    list-style: none;
 }
 .menu-list li:not(:last-child) {
     margin-right: 50px;
@@ -63,7 +66,8 @@ a {
 }
 .nav-contacts-list {
     display: flex;
-    list-style: none;
+    padding: 0px;
+    margin: 0px;
     margin-left: auto;
 }
 .nav-contacts-list .nav-contacts-item:not(:last-child) {
@@ -94,6 +98,7 @@ a {
 .main-container {
     display: block;
     margin: 0px;
+    padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
     background-color: #2F303A;
@@ -101,7 +106,6 @@ a {
 .main-title {
     margin-top: 0px;
     margin-bottom: 30px;
-    padding-top: 200px;
     font-size: 44px;
     font-weight: 900;
     font-style: normal;
@@ -158,25 +162,27 @@ a {
     text-align: center;
     letter-spacing: 0.03em;
 }
-
+.works {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .works-list {
     display: flex;
-    list-style: none;
     margin: 0px;
     padding: 0px;
-    padding-bottom: 94px;
 }
 .works-list-item:not(:last-child){
     margin-right: 30px;
 }
 
 .team {
+    padding-top: 94px ;
+    padding-bottom: 94px ;
     background-color:#F5F4FA;
 }
 .title-team {
     margin: 0px;
     margin-bottom: 50px;
-    padding-top: 94px;
     font-size: 36px;
     font-weight: 700;
     color: black;
@@ -186,17 +192,16 @@ a {
     letter-spacing: 0.03em;
 }
 .team-list {
+    display: flex;
     margin: 0px;
     margin-left: auto;
     margin-right: auto;
     padding: 0px;
-    padding-bottom: 94px;
-    display: flex;
-    list-style: none;
 }
 .team-person-card {
     padding-top: 30px;
     padding-bottom: 30px;
+    background-color: #FFFFFF;
 }
 .team-member {
     margin: 0px;
@@ -219,7 +224,6 @@ a {
 
 .contacts {
     margin: 0px;
-    list-style: none;
     padding: 0px;
 }
 .contacts-header {   
@@ -234,13 +238,19 @@ a {
     color: #2196F3;
 }
 .footer-container {
-    padding-left: 215px;
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #2f303a;
 }
 .logotype-footer {
+    display: block;
     margin-bottom: 20px;
+}
+.logo-studio-footer {
+    font-family: Raleway;
+    font-size: 26px;
+    font-weight: 700;
+    color: #FFFFFF;
 }
 .contacts-footer {   
     font-weight: 500;
@@ -265,7 +275,8 @@ a {
 }
 
 .address {
-    padding-bottom: 9px;
+    display: block;
+    margin-bottom: 9px;
     font-style: normal;
     font-size: 14px;
     font-weight: 400;
@@ -288,14 +299,15 @@ a {
     font-weight: 400;
     color: #757575;
 }
+.portfolio {
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
 .portfolio-menu {
     display: flex;
     margin: 0px;
     padding: 0px;
-    padding-top: 94px;
-    padding-bottom: 50px ;
     justify-content: center;
- 
     list-style: none;
 }
 .portfolio-menu li:not(:last-child) {
@@ -311,24 +323,19 @@ a {
     border-radius: 4px;
     text-align: center;
 }
-.portfolio-container {
-    display: flex; 
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 1200px;
-    list-style: none;
-    margin-left: auto;
-    margin-right: auto;
+.portfolio-section {
+    padding-bottom: 94px;
 }
 .portfolio-list {
     display: flex;
-    list-style: none;
     flex-wrap: wrap;
-    margin-left: -30px;
-    margin-top: -30px;
+    margin: 0px;
+    margin-left:-30px;
+    margin-top:-30px;
     padding: 0px;
 }
-.portfolio-list > .portfolio-item {
+
+.portfolio-item {
     margin-left: 30px;
     margin-top: 30px;
     flex-basis: calc(100%/3 - 30px);
