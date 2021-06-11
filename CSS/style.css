@@ -24,9 +24,6 @@ li {
 img {
     display: block;
 }
-.logotype {
-    margin-right: 93px;
-}
 .container {
     width: 1200px;
     padding-right: 15px;
@@ -34,7 +31,14 @@ img {
     margin-right: auto;
     margin-left: auto;
 }
-
+.header-container {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #ECECEC;
+}
+.logotype {
+    margin-right: 93px;
+}
 .logo-web {
     font-family: Raleway;
     font-size: 26px;
@@ -49,8 +53,6 @@ img {
 }
 .main-menu {
     display: flex;
-    padding-top: 24px;
-    padding-bottom: 24px;
     align-items: center;
 }
 .menu-list  {
@@ -163,7 +165,6 @@ img {
     letter-spacing: 0.03em;
 }
 .works {
-    padding-top: 94px;
     padding-bottom: 94px;
 }
 .works-list {
@@ -286,6 +287,9 @@ img {
 }
 
 .project-title {
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 4px; ;
     font-size: 18px;
     font-weight: 700;
     color: #212121;
@@ -295,6 +299,8 @@ img {
 
 }
 .project-type {
+    margin: 0px;
+    padding: 0px;
     font-size: 16px;
     font-weight: 400;
     color: #757575;
@@ -338,5 +344,13 @@ img {
     margin-left: 30px;
     margin-top: 30px;
     flex-basis: calc(100%/3 - 30px);
-    border: 1px solid #EEEEEE;
+}
+.portfolio-card {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
 }
