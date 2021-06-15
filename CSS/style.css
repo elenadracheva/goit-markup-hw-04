@@ -75,6 +75,17 @@ img {
 .nav-contacts-list .nav-contacts-item:not(:last-child) {
     margin-right: 50px;
 }
+.contacts-header {
+    display: flex;
+    align-items: center;
+}
+.nav-contacts-list {
+    display: flex;
+}
+.email-icon {
+    width: 16px;
+    height: 12px;
+}
 .title-nav {
     font-size: 14px;
     font-weight: 500;
@@ -103,8 +114,19 @@ img {
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
-    background-color: #2F303A;
+    background-image: 
+       linear-gradient(
+           to right, 
+           rgba(47, 48, 58, 0.4),
+           rgba(47, 48, 58, 0.4)
+       ),
+       url(../images/heroes.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-size: 1600px;
 }
+
 .main-title {
     margin-top: 0px;
     margin-bottom: 30px;
@@ -146,6 +168,26 @@ img {
 }
 .advantage-list .advantage-list-item:not(:last-child) {
     margin-right: 30px;
+}
+.advantage-list-item::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #F5F4FA;
+}
+.advantage-list-item:nth-child(1)::before{
+    background-image: url(../images/antenna.png) ;
+}
+.advantage-list-item:nth-child(2)::before{
+    background-image: url(../images/clock.png) ;
+}
+.advantage-list-item:nth-child(3)::before{
+    background-image: url(../images/diagramma.png) ;
+}
+.advantage-list-item:nth-child(4)::before{
+    background-image: url(../images/astronaut1.png) ;
 }
 
 .advantage-fill {
@@ -219,8 +261,66 @@ img {
     font-weight: 400;
     color: #757575;
 }
+.team-person {
+    box-shadow: 0px 2px 1px 0px #00000033;
+    box-shadow: 0px 1px 1px 0px #00000024;
+    box-shadow: 0px 1px 3px 0px #0000001F;
+
+}
 .team-person:not(:last-child) {
     margin-right: 30px;
+}
+.clients {
+    margin: 0px;
+    margin-bottom: 50px;
+    font-size: 36px;
+    font-weight: 700;
+    color: black;
+    font-family: Roboto;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.clients-container {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.clients-list {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+}
+
+.clients-list-item:not(:last-child) {
+    margin-right: 30px;
+}
+.clients-list-link {
+    display: inline-block;
+    width: 170px;
+    height: 92px;
+    border: 1px solid;
+    border-color: #AFB1B8;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.clients-list-link-1 {
+    background-image: url(../images/company1.png);
+}
+.clients-list-link-2 {
+    background-image: url(../images/company2.png);
+}
+.clients-list-link-3 {
+    background-image: url(../images/company3.png);
+}
+.clients-list-link-4 {
+    background-image: url(../images/company4.png);
+}
+.clients-list-link-5 {
+    background-image: url(../images/company5.png);
+}
+.clients-list-link-6 {
+    background-image: url(../images/company6.png);
 }
 
 .contacts {
