@@ -119,6 +119,7 @@ img {
 .menu-button:hover {
     color: #FFFFFF;
     background-color: #2196F3;
+    cursor: pointer;
 }
 .menu-button:focus {
     color: #FFFFFF;
@@ -527,7 +528,7 @@ img {
 }
 .portfolio {
     padding-top: 94px;
-    padding-bottom: 50px;
+    padding-bottom: 94px;
 }
 .portfolio-menu {
     display: flex;
@@ -549,6 +550,9 @@ img {
     border-radius: 4px;
     text-align: center;
 }
+.portfolio-main-menu {
+    margin-bottom: 50px;
+}
 .portfolio-section {
     padding-bottom: 94px;
 }
@@ -569,7 +573,6 @@ img {
     box-shadow: 1px 4px 6px 0px #00000029;
     box-shadow: 0px 4px 4px 0px #0000000F;
     box-shadow: 0px 1px 1px 0px #0000001F;
-    
 }
 .portfolio-card {
     padding-top: 20px;
