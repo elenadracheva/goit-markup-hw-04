@@ -22,8 +22,22 @@
           </ul>  
       </nav>
         <ul class="nav-contacts-list">
-          <li class="nav-contacts-item"> <a href="mailto:info@devstudio.com:" class="contacts-header">info@devstudio.com</a> </li>
-          <li class="nav-contacts-item"> <a href="tel:+380961111111" class="contacts-header">+38 096 111 11 11</a> </li>
+          <li class="nav-contacts-item"> 
+            <a href="mailto:info@devstudio.com:"
+               class="contacts-header">
+              <svg class="email-icon">
+                <use href="./images/symbol-defs.svg#icon-icon-email"></use>
+              </svg>
+              info@devstudio.com   
+            </a> 
+          </li>
+          <li class="nav-contacts-item"> 
+            <a href="tel:+380961111111" class="contacts-header">
+            <svg class="phone-icon">
+              <use href="./images/symbol-defs.svg#icon-icon-phone"></use>
+            </svg>
+            +38 096 111 11 11</a> 
+          </li>
         </ul>  
     </div>   
     </header>
@@ -31,15 +45,15 @@
      <section class="portfolio">
        <div class="container">
          <ul class="portfolio-menu">
-            <li> <button type="button" class="menu-button"> Все </button> </li>
-            <li> <button type="button" class="menu-button"> Вебсайты </button> </li>
-            <li> <button type="button" class="menu-button"> Приложения</button> </li>
-            <li> <button type="button" class="menu-button"> Дизайн </button></li>
-            <li> <button type="button" class="menu-button"> Маркетинг </button> </li>
+          <li> <button type="button" class="menu-button"> Все </button> </li>
+          <li> <button type="button" class="menu-button"> Вебсайты </button> </li>
+          <li> <button type="button" class="menu-button"> Приложения</button> </li>
+          <li> <button type="button" class="menu-button"> Дизайн </button></li>
+          <li> <button type="button" class="menu-button"> Маркетинг </button> </li>
         </ul>
       </div>
     </section>
-      <section class="portfolio-section">
+     <section class="portfolio-section">
         <div class="container">
           <ul class="portfolio-list">
              <li class="portfolio-item"> <a href="">
@@ -130,7 +144,8 @@
         </section>
    </main>
    <footer class="footer-container">
-    <div class="container">
+    <div class="container footer-parts">
+      <div class="footer-contacts-container">
       <a href="/index.html" class="logotype-footer"> 
         <span class="logo-web"> Web</span>
         <span class="logo-studio-footer">Studio</span> 
@@ -142,6 +157,42 @@
           <li><a class="contacts-footer" href="mailto:info@example.com">info@example.com </a> </li> 
         </ul>
     </address>
+  </div>
+  <div class="footer-socials">
+    <span class="join-us">присоединяйтесь</span>
+    <div class="person-social">
+      <ul class="social-list">
+        <li class="social-container">
+          <a href="">
+            <svg class="instagram-icon"> 
+              <use href="./images/symbol-defs.svg#icon-icon-instagram"></use>
+            </svg>
+         </a>
+       </li>
+       <li class="social-container" >
+          <a href="">
+            <svg class="twitter-icon">
+              <use href="./images/symbol-defs.svg#icon-icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-container">
+          <a href="">
+            <svg class="facebook-icon">
+              <use href="./images/symbol-defs.svg#icon-icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-container">
+          <a href="">
+            <svg class="linkedin-icon">
+              <use href="./images/symbol-defs.svg#icon-icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+     </ul>
+    </div>
+  </div>
   </div>
   </footer>
  </body>
