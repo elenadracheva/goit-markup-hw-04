@@ -79,12 +79,28 @@ img {
     display: flex;
     align-items: center;
 }
+.contacts-header:hover {
+    color: var(--accent-color);
+}
 .nav-contacts-list {
     display: flex;
 }
 .email-icon {
+    padding-right: 10px;
+    fill: #757575;
     width: 16px;
     height: 12px;
+}
+.email-icon:hover {
+    fill: var(--accent-color);
+}
+.phone-icon {
+    color:  #757575;
+    width: 10px;
+    height: 16px;
+}
+.phone-icon:hover {
+    fill: var(--accent-color);
 }
 .title-nav {
     font-size: 14px;
@@ -256,6 +272,7 @@ img {
 }
 .team-role {
     margin: 0px;
+    margin-bottom: 16px;
     text-align: center;
     font-size: 16px;
     font-weight: 400;
@@ -265,10 +282,72 @@ img {
     box-shadow: 0px 2px 1px 0px #00000033;
     box-shadow: 0px 1px 1px 0px #00000024;
     box-shadow: 0px 1px 3px 0px #0000001F;
-
 }
 .team-person:not(:last-child) {
     margin-right: 30px;
+}
+.person-social {
+    display: flex;
+}
+.social-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 44px;
+    height: 44px;
+}
+.social-container:hover{
+    background-color: var(--accent-color);
+    border-radius: 50%;
+}
+.social-list {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+.social-link {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+}
+.instagram-icon {
+    fill: #AFB1B8;
+    width: 20px;
+    height: 20px;
+}
+.instagram-icon:hover{
+    fill: #FFFFFF;
+}
+.twitter-icon {
+    fill: #AFB1B8;
+    width: 20px;
+    height: 20px;
+}
+.twitter-icon:hover {
+    fill: #FFFFFF;
+}
+.facebook-icon {
+    fill: #AFB1B8;
+    width: 10px;
+    height: 20px;
+}
+.facebook-icon:hover{
+    fill: #FFFFFF;
+}
+.linkedin-icon {
+    fill: #AFB1B8;
+    width: 20px;
+    height: 20px;
+}
+.linkedin-icon:hover{
+    fill: #FFFFFF;
 }
 .clients {
     margin: 0px;
@@ -295,7 +374,9 @@ img {
     margin-right: 30px;
 }
 .clients-list-link {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 170px;
     height: 92px;
     border: 1px solid;
@@ -304,25 +385,41 @@ img {
     background-repeat: no-repeat;
     background-position: center;
 }
-.clients-list-link-1 {
-    background-image: url(../images/company1.png);
+.clients-list-link:hover {
+    border-color: var(--accent-color);
+    cursor: pointer;
 }
-.clients-list-link-2 {
-    background-image: url(../images/company2.png);
+.company-icons {
+    fill: #AFB1B8;
 }
-.clients-list-link-3 {
-    background-image: url(../images/company3.png);
+.company-icons:hover {
+    fill: var(--accent-color);
+    cursor: pointer;
 }
-.clients-list-link-4 {
-    background-image: url(../images/company4.png);
+.company1-icon {
+    height: 41px;
+    width: 47px;
 }
-.clients-list-link-5 {
-    background-image: url(../images/company5.png);
+.company2-icon {
+    height: 52px;
+    width: 40px;
 }
-.clients-list-link-6 {
-    background-image: url(../images/company6.png);
+.company3-icon{
+    height: 41px;
+    width: 43px;
 }
-
+.company4-icon{
+    height: 40px;
+    width: 84px;
+}
+.company5-icon{
+    height: 45px;
+    width: 63px;
+}
+.company6-icon {
+    height: 44px;
+    width: 94px;
+}
 .contacts {
     margin: 0px;
     padding: 0px;
@@ -339,9 +436,17 @@ img {
     color: #2196F3;
 }
 .footer-container {
+    display: flex;
+    justify-content: flex-start;
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #2f303a;
+}
+.footer-contacts-container {
+    margin-right: 70px;
+}
+.footer-parts {
+    display: flex;
 }
 .logotype-footer {
     display: block;
@@ -384,6 +489,21 @@ img {
     line-height: 1.7;
     letter-spacing: 0.03em;
     color: #FFFFFF;
+}
+.footer-socials{
+    display: flex;
+    flex-direction: column;
+}
+
+.join-us {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-family: Roboto;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
 
 .project-title {
@@ -444,6 +564,12 @@ img {
     margin-left: 30px;
     margin-top: 30px;
     flex-basis: calc(100%/3 - 30px);
+}
+.portfolio-item:hover {
+    box-shadow: 1px 4px 6px 0px #00000029;
+    box-shadow: 0px 4px 4px 0px #0000000F;
+    box-shadow: 0px 1px 1px 0px #0000001F;
+    
 }
 .portfolio-card {
     padding-top: 20px;
