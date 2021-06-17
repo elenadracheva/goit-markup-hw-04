@@ -79,35 +79,35 @@ img {
     display: flex;
     align-items: center;
 }
-.contacts-header:hover {
+.contacts-header:hover,
+.contacts-header:focus {
     color: var(--accent-color);
+    outline: none;
 }
 .nav-contacts-list {
     display: flex;
 }
 .email-icon {
-    padding-right: 10px;
-    fill: #757575;
+    margin-right: 10px;
+    fill: currentColor;
     width: 16px;
     height: 12px;
 }
-.email-icon:hover {
-    fill: var(--accent-color);
-}
 .phone-icon {
-    color:  #757575;
+    margin-right: 10px;
+    fill: currentColor;
     width: 10px;
     height: 16px;
-}
-.phone-icon:hover {
-    fill: var(--accent-color);
 }
 .title-nav {
     font-size: 14px;
     font-weight: 500;
     color: #2F303A;
 }
-.title-nav:hover {color: #2196F3;
+.title-nav:hover,
+.title-nav:focus {
+    color: var(--accent-color);
+    outline: none;
 }
 
 .menu-button {
@@ -118,12 +118,13 @@ img {
 }
 .menu-button:hover {
     color: #FFFFFF;
-    background-color: #2196F3;
+    background-color: var(--accent-color);
     cursor: pointer;
 }
 .menu-button:focus {
     color: #FFFFFF;
-    background-color: #2196F3;
+    background-color: var(--accent-color);
+    outline: none;
 }
 .main-container {
     display: block;
@@ -190,6 +191,7 @@ img {
     display: block;
     content: "";
     height: 120px;
+    border-radius: 4px;
     background-position: center;
     background-repeat: no-repeat;
     background-color: #F5F4FA;
@@ -301,9 +303,31 @@ img {
     width: 44px;
     height: 44px;
 }
-.social-container:hover{
+.social-container:hover,
+.social-container:focus {
     background-color: var(--accent-color);
     border-radius: 50%;
+    outline: none;
+}
+.social-container:hover .instagram-icon,
+.social-container:focus .instagram-icon{
+    fill: #FFFFFF;
+    outline: none;
+}
+.social-container:hover .twitter-icon,
+.social-container:focus .twitter-icon{
+    fill: #FFFFFF;
+    outline: none;
+}
+.social-container:hover .facebook-icon,
+.social-container:focus .facebook-icon{
+    fill: #FFFFFF;
+    outline: none;
+}
+.social-container:hover .linkedin-icon,
+.social-container:focus .linkedin-icon{
+    fill: #FFFFFF;
+    outline: none;
 }
 .social-list {
     display: flex;
@@ -323,33 +347,22 @@ img {
     width: 20px;
     height: 20px;
 }
-.instagram-icon:hover{
-    fill: #FFFFFF;
-}
 .twitter-icon {
     fill: #AFB1B8;
     width: 20px;
     height: 20px;
 }
-.twitter-icon:hover {
-    fill: #FFFFFF;
-}
 .facebook-icon {
     fill: #AFB1B8;
-    width: 10px;
+    width: 20px;
     height: 20px;
-}
-.facebook-icon:hover{
-    fill: #FFFFFF;
 }
 .linkedin-icon {
     fill: #AFB1B8;
     width: 20px;
     height: 20px;
 }
-.linkedin-icon:hover{
-    fill: #FFFFFF;
-}
+
 .clients {
     margin: 0px;
     margin-bottom: 50px;
@@ -381,45 +394,52 @@ img {
     width: 170px;
     height: 92px;
     border: 1px solid;
-    border-color: #AFB1B8;
+    color: #AFB1B8;
     border-radius: 4px;
     background-repeat: no-repeat;
     background-position: center;
 }
-.clients-list-link:hover {
-    border-color: var(--accent-color);
+.clients-list-link:hover,
+.clients-list-link:focus {
+    color: var(--accent-color);
     cursor: pointer;
+    outline: none;
 }
-.company-icons {
-    fill: #AFB1B8;
-}
-.company-icons:hover {
-    fill: var(--accent-color);
-    cursor: pointer;
+
+.clients-list-link:hover .company-icons,
+.clients-list-link:focus .company-icons {
+    fill: currentColor;
+    outline: none;
 }
 .company1-icon {
     height: 41px;
     width: 47px;
+    fill: currentColor;
 }
 .company2-icon {
     height: 52px;
     width: 40px;
+    fill: currentColor;
 }
 .company3-icon{
     height: 41px;
     width: 43px;
+    fill: currentColor;
 }
 .company4-icon{
     height: 40px;
     width: 84px;
+    fill: currentColor;
 }
 .company5-icon{
     height: 45px;
     width: 63px;
+    fill: currentColor;
 }
 .company6-icon {
     height: 44px;
     width: 94px;
+    fill: currentColor;
 }
 .contacts {
     margin: 0px;
@@ -433,12 +453,14 @@ img {
     letter-spacing: 0.02em;
     color: #757575;
 }
-.contacts-header:hover contacts-header:focus {
+.contacts-header:hover, 
+.contacts-header:focus {
     color: #2196F3;
+    outline: none;
 }
 .footer-container {
     display: flex;
-    justify-content: flex-start;
+    align-items: baseline;
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: #2f303a;
@@ -448,6 +470,7 @@ img {
 }
 .footer-parts {
     display: flex;
+    align-items: baseline;
 }
 .logotype-footer {
     display: block;
@@ -471,14 +494,17 @@ img {
     margin-bottom: 9px;
 }
 .contacts-footer:hover.contacts-footer:focus {
-    color: #2196F3;
+    color: var(--accent-color);
+    outline: none;
     } 
 
 .contact-item:hover {
-    color:#2196F3 ;
+    color: var(--accent-color);
+    outline: none;
 }
 .contact-item:focus {
-    color: #2196F3;
+    color: var(--accent-color);
+    outline: none;
 }
 
 .address {
@@ -497,14 +523,22 @@ img {
 }
 
 .join-us {
+    text-transform: uppercase;
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
     color: #FFFFFF;
     font-family: Roboto;
     line-height: 1.16;
-    text-align: center;
     letter-spacing: 0.03em;
+}
+.social-list-link {
+    display: flex;
+    margin-right: 10px;
+}
+.social-container {
+    background-color:rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
 }
 
 .project-title {
@@ -550,6 +584,12 @@ img {
     border-radius: 4px;
     text-align: center;
 }
+.menu-button:hover,
+.menu-button:focus {
+    box-shadow: 0px 2px 2px 0px #0000001F;
+    box-shadow: 0px 1px 2px 0px #00000014;
+    box-shadow: 0px 3px 1px 0px #0000001A;
+}
 .portfolio-main-menu {
     margin-bottom: 50px;
 }
@@ -569,7 +609,8 @@ img {
     margin-top: 30px;
     flex-basis: calc(100%/3 - 30px);
 }
-.portfolio-item:hover {
+.portfolio-item:hover,
+.portfolio-item:focus {
     box-shadow: 1px 4px 6px 0px #00000029;
     box-shadow: 0px 4px 4px 0px #0000000F;
     box-shadow: 0px 1px 1px 0px #0000001F;
